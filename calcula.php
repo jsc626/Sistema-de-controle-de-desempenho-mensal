@@ -12,7 +12,7 @@ if($tarefas >=25 && $atraso == 0){
     echo "Funcionario elegivel para bonus";
 }
 
-elseif($tarefas == 20 && $atraso <= 1){
+elseif($tarefas == 20 && $atraso == 0){
     echo "Desempenho Excelente";
 }
 
