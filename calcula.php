@@ -6,11 +6,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
    $atraso = $_POST["atraso"];
 
 if(!empty($setor)){
-    echo "Seu setor é:$setor";
+    echo "Seu setor é:$setor<br>";
 }
 if(!empty($nome)){
-    echo "Funcionario:$nome";
+    echo "Funcionario:$nome<br>";
 }
+
+echo "Data da avaliação: " . date("d/m/Y") . "<br>";
 
 if($tarefas >= 20 && $atraso <= 1){
     echo "Desempenho Excelente";
